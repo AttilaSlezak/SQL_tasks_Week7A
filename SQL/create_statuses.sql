@@ -1,0 +1,5 @@
+CREATE TABLE MeetupSystemDB.Statuses (
+Id INTEGER NOT NULL auto_increment,
+Value VARCHAR(50) NOT NULL,
+PRIMARY KEY (Id)
+) ENGINE = MyISAM;

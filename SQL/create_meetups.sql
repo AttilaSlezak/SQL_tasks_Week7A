@@ -1,0 +1,8 @@
+CREATE TABLE MeetupSystemDB.Meetups (
+Id INTEGER NOT NULL auto_increment,
+Start DATETIME NOT NULL,
+Location VARCHAR(150) NOT NULL,
+Topic VARCHAR(150) NOT NULL,
+Description VARCHAR(1000) NOT NULL,
+PRIMARY KEY (Id)
+) ENGINE = MyISAM;

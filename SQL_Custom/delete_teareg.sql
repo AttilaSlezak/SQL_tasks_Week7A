@@ -1,0 +1,1 @@
+DROP TABLE TeaDB.Tea_registrations;

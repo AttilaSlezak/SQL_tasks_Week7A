@@ -1,0 +1,10 @@
+CREATE TABLE MeetupSystemDB.MeetupRegistrations (
+Id INTEGER NOT NULL auto_increment,
+StatusId INTEGER NOT NULL,
+MeetupId INTEGER NOT NULL,
+UserId INTEGER NOT NULL,
+PRIMARY KEY (Id),
+FOREIGN KEY (StatusId) REFERENCES Statuses(Id),
+FOREIGN KEY (MeetupId) REFERENCES Meetups(Id),
+FOREIGN KEY (UserId) REFERENCES Users(Id)
+) ENGINE = MyISAM;

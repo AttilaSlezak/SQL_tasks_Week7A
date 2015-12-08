@@ -1,0 +1,1 @@
+ALTER TABLE MeetupSystemDB.Meetups ADD COLUMN Max_places INTEGER(5);

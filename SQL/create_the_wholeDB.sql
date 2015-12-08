@@ -1,0 +1,37 @@
+CREATE DATABASE MeetupSystemDB;
+
+CREATE TABLE MeetupSystemDB.MeetupRegistrations (
+Id INTEGER NOT NULL auto_increment,
+StatusId INTEGER NOT NULL,
+MeetupId INTEGER NOT NULL,
+UserId INTEGER NOT NULL,
+PRIMARY KEY (Id),
+FOREIGN KEY (StatusId) REFERENCES Statuses(Id),
+FOREIGN KEY (MeetupId) REFERENCES Meetups(Id),
+FOREIGN KEY (UserId) REFERENCES Users(Id)
+) ENGINE = MyISAM;
+
+CREATE TABLE MeetupSystemDB.Meetups (
+Id INTEGER NOT NULL auto_increment,
+Start DATETIME NOT NULL,
+Location VARCHAR(150) NOT NULL,
+Topic VARCHAR(150) NOT NULL,
+Description VARCHAR(1000) NOT NULL,
+PRIMARY KEY (Id)
+) ENGINE = MyISAM;
+
+CREATE TABLE MeetupSystemDB.Statuses (
+Id INTEGER NOT NULL auto_increment,
+Value VARCHAR(50) NOT NULL,
+PRIMARY KEY (Id)
+) ENGINE = MyISAM;
+
+CREATE TABLE MeetupSystemDB.Users (
+Id INTEGER NOT NULL auto_increment,
+Name VARCHAR(100) NOT NULL,
+Birthdate DATETIME NOT NULL,
+Introduction VARCHAR(500),
+Avatar VARCHAR(1000),
+Email VARCHAR(150),
+PRIMARY KEY (Id)
+) ENGINE = MyISAM;

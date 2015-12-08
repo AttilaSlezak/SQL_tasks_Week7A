@@ -1,0 +1,1 @@
+SELECT DISTINCT(Location) AS 'Location of the meetups' FROM MeetupSystemDB.Meetups;

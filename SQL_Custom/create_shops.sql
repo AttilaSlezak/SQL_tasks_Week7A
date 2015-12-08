@@ -1,0 +1,8 @@
+CREATE TABLE TeaDB.Shops (
+Id INTEGER NOT NULL auto_increment,
+Name VARCHAR(80) NOT NULL,
+Location VARCHAR(80) NOT NULL,
+Homepage VARCHAR(150),
+Email VARCHAR(150),
+PRIMARY KEY (Id)
+) ENGINE = MyISAM;

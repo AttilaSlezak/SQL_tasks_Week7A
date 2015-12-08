@@ -1,0 +1,1 @@
+ALTER TABLE MeetupSystemDB.Users ADD COLUMN Address VARCHAR(50);
